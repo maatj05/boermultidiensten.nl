@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "exports": {
+    "mwg.cms4.core.interfaces/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6",
+      "compile": {
+        "bin/Release/mwg.cms4.core.interfaces.dll": {}
+      },
+      "runtime": {
+        "bin/Release/mwg.cms4.core.interfaces.dll": {}
+      },
+      "contentFiles": {
+        "bin/Release/mwg.cms4.core.interfaces.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "mwg.cms4.core.Linq2SqlRepository/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5.1",
+      "compile": {
+        "bin/Release/mwg.cms4.core.Linq2SqlRepository.dll": {}
+      },
+      "runtime": {
+        "bin/Release/mwg.cms4.core.Linq2SqlRepository.dll": {}
+      },
+      "contentFiles": {
+        "bin/Release/mwg.cms4.core.Linq2SqlRepository.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "mwg.library.giethoornagenda/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5",
+      "compile": {
+        "bin/Release/mwg.library.giethoornagenda.dll": {}
+      },
+      "runtime": {
+        "../../../zvtwiede.nl/packages/Microsoft.AspNet.WebApi.Client.5.2.3/lib/net45/System.Net.Http.Formatting.dll": {},
+        "../../../zvtwiede.nl/packages/Newtonsoft.Json.9.0.1/lib/net45/Newtonsoft.Json.dll": {},
+        "bin/Release/mwg.library.giethoornagenda.dll": {}
+      },
+      "contentFiles": {
+        "bin/Release/mwg.library.giethoornagenda.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "mwg.library.imaging/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5",
+      "compile": {
+        "bin/Release/mwg.library.imaging.dll": {}
+      },
+      "runtime": {
+        "bin/Release/mwg.library.imaging.dll": {}
+      },
+      "contentFiles": {
+        "bin/Release/mwg.library.imaging.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7673A1AF-944A-40F6-8F76-6F24A1155542}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81740700-AF56-4663-81B5-3C0C7AEFA8CE}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mwg.cms4.core.interfaces", "..\mwg.cms4.core\mwg.cms4.core.interfaces\mwg.cms4.core.interfaces.csproj", "{5D4478FD-26F4-4036-9088-614906DEBA79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mwg.cms4.core.Linq2SqlRepository", "..\mwg.cms4.core\mwg.cms4.core.Linq2SqlRepository\mwg.cms4.core.Linq2SqlRepository.csproj", "{0A0E819F-CB01-43C8-9522-F5B1F38291C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mwg.library.imaging", "..\mwg\Library\imaging\mwg.library.imaging.csproj", "{ADD00EC2-4ED2-4A2C-9DDB-18C68190990B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mwg.library.giethoornagenda", "..\mwg\Library\giethoornagenda\mwg.library.giethoornagenda.csproj", "{4738516A-124F-4B56-99A3-E9C9E8DC0086}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "website", "src\website\website.xproj", "{C950DBED-585C-47A6-95C8-B186C17A10B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D4478FD-26F4-4036-9088-614906DEBA79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4478FD-26F4-4036-9088-614906DEBA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4478FD-26F4-4036-9088-614906DEBA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4478FD-26F4-4036-9088-614906DEBA79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A0E819F-CB01-43C8-9522-F5B1F38291C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A0E819F-CB01-43C8-9522-F5B1F38291C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A0E819F-CB01-43C8-9522-F5B1F38291C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A0E819F-CB01-43C8-9522-F5B1F38291C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADD00EC2-4ED2-4A2C-9DDB-18C68190990B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD00EC2-4ED2-4A2C-9DDB-18C68190990B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD00EC2-4ED2-4A2C-9DDB-18C68190990B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD00EC2-4ED2-4A2C-9DDB-18C68190990B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4738516A-124F-4B56-99A3-E9C9E8DC0086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4738516A-124F-4B56-99A3-E9C9E8DC0086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4738516A-124F-4B56-99A3-E9C9E8DC0086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4738516A-124F-4B56-99A3-E9C9E8DC0086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C950DBED-585C-47A6-95C8-B186C17A10B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C950DBED-585C-47A6-95C8-B186C17A10B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C950DBED-585C-47A6-95C8-B186C17A10B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C950DBED-585C-47A6-95C8-B186C17A10B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C950DBED-585C-47A6-95C8-B186C17A10B4} = {7673A1AF-944A-40F6-8F76-6F24A1155542}
+	EndGlobalSection
+EndGlobal

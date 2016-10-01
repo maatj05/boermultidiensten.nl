@@ -1,0 +1,53 @@
+﻿@model IEnumerable<mwg.cms4.core.interfaces.entities.IImage>
+
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+
+        @{
+            string first = "active";
+            for (int i = 0; i < Model.Count(); i++)
+            {
+                <li data-target="#myCarousel" data-slide-to="@i" class="@first"></li>
+                first = "";
+            }
+        }
+
+
+
+    </ol>
+    <div class="carousel-inner" role="listbox">
+
+
+        @{
+            first = "active";
+            foreach (var item in Model)
+            {
+                <div class="item @first">
+                    <img src="/common/ContentImage?PhotoId=@item.Id" alt="ASP.NET" class="img-responsive" />
+                    <div class="carousel-caption" role="option">
+                        <p>@item.Description
+                        </p>
+                    </div>
+                </div>
+                first = "";
+            }
+
+
+        }
+
+
+       
+
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>

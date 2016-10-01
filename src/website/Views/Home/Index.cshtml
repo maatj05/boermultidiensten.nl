@@ -1,0 +1,22 @@
+﻿@model mwg.cms4.core.interfaces.entities.IContent
+@{
+    ViewData["Title"] = Model.SeoTitle;
+    ViewData["Description"] = Model.SeoDescription;
+
+    Layout = ViewBag.layout;
+
+}
+
+
+
+
+    @*<ul>
+        @foreach (var item in Model.ContentBlocksOrdered)
+        {
+            <li>@item.BlockName</li>
+        }
+    </ul>*@
+
+
+    @Html.Raw(Model.Text)
+

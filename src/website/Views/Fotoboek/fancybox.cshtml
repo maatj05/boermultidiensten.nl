@@ -1,0 +1,46 @@
+﻿@model mwg.cms4.core.interfaces.repositories.IFotoboekRepository
+
+
+<h1>Fotoboek</h1>
+<p>Hieronder een selectie van onze mooiste foto's</p>
+
+
+@{
+
+    int teller = 0;
+
+}
+
+
+
+
+
+@foreach (var item in Model.FotoBooks.OrderByDescending(x => x.FotoboekId))
+{
+
+    teller++;
+
+    var foto = item.Fotos.FirstOrDefault();
+
+    if (foto != null)
+    {
+
+
+        <div class="mwg-fotoboekbox">
+            <a class="fancybox" rel="@string.Format("galery{0}", teller)" id="@string.Format("img{0}", foto.Id)" href='@string.Format("/images/img_{0}.jpg", foto.Id)' title="@foto.Description">
+                <img src="/common/FotobookImage?PhotoId=@foto.Id&width=240&height=180" width="240" height="180" alt="@foto.Description" />
+
+            </a>
+            <h5 class="mwg-fotoboektitel">@item.Title</h5>
+        </div>
+
+        foreach (var subitem in item.Fotos.Skip(1))
+        {
+            <a class="fancybox" rel="@string.Format("galery{0}", teller)" id="@string.Format("img{0}", subitem.Id)" href='@string.Format("/images/img_{0}.jpg", subitem.Id)' title="@subitem.Description"></a>
+        }
+
+
+    }
+}
+
+<br style="clear:both" />

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<mwg.library.giethoornagenda.entities.GiethoornAgendaActivity>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+
+<ul class="giethoornagenda">
+    @foreach (var item in Model)
+    {
+
+
+        <li>
+            @item.GetLongDateText()
+            <h5>@item.Title</h5>
+            <p>@item.ShortDescription</p>
+            <a target="_blank" href="http://www.giethoornagenda.nl/Activity/Detail/@item.ActivityId">lees meer</a>
+            <hr />
+        </li>
+
+    }
+</ul>
